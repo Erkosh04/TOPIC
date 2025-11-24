@@ -19,11 +19,11 @@ if st.button("Жіберу"):
 
         if model == "LDA":
             topics, coh = train_lda([clean])
-            st.subheader("LDA Тақырыптар:")
+            st.subheader("LDA Тақырыптары:")
             st.write(topics)
             st.write("Coherence:", coh)
 
         else:
             topics = train_bertopic([clean])
-            st.subheader("BERTopic Тақырыптар:")
+            st.subheader("BERTopic Тақырыптары:")
             st.write(topics)
